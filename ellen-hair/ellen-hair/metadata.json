@@ -1,6 +1,0 @@
-{
-  "name": "Ellen Hair",
-  "description": "Salão de beleza unissex em Maringá. Cabelo, barbearia, estética, unhas e produção. Três unidades no centro.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
