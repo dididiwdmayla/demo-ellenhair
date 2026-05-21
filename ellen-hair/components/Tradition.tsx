@@ -30,7 +30,7 @@ export default function Tradition() {
                 fill
                 className="object-cover"
               />
-            </MaskReveal>
+            </div>
           </div>
 
           {/* Texto Esquerda */}
