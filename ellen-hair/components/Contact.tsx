@@ -23,10 +23,22 @@ export default function Contact() {
   };
 
   return (
-    <section className="w-full bg-bg-primary py-32 px-6 border-t border-border-subtle">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 md:gap-24">
-        
-        {/* Esquerda: Redes Sociais */}
+    <section id="contato" className="w-full bg-bg-primary py-32 px-6 border-t border-border-subtle">
+      <div className="max-w-7xl mx-auto">
+        <FadeUp>
+          <div className="flex flex-col mb-16">
+            <div className="flex gap-1 mb-4 text-[12px]">
+              <span className="text-red-ellen">★</span><span className="text-yellow-ellen">★</span><span className="text-red-ellen">★</span>
+            </div>
+            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">VI</div>
+            <div className="font-mono text-xs font-bold uppercase tracking-[0.15em] text-gold">
+              06 / CONTATO
+            </div>
+          </div>
+        </FadeUp>
+        <div className="flex flex-col md:flex-row gap-16 md:gap-24">
+          
+          {/* Esquerda: Redes Sociais */}
         <div className="w-full md:w-1/3">
           <FadeUp>
             <h2 className="font-sans font-bold text-2xl uppercase tracking-wide text-text-primary mb-10">
@@ -123,6 +135,7 @@ export default function Contact() {
           </FadeUp>
         </div>
 
+        </div>
       </div>
     </section>
   );

@@ -10,9 +10,9 @@ export default function Pillars() {
             <div className="flex gap-1 mb-4 text-[12px]">
               <span className="text-red-ellen">★</span><span className="text-yellow-ellen">★</span><span className="text-red-ellen">★</span>
             </div>
-            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">II</div>
+            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">III</div>
             <div className="font-mono text-xs font-bold uppercase tracking-[0.15em] text-gold">
-              02 / Filosofia
+              03 / FILOSOFIA
             </div>
           </div>
           <h2 className="font-display font-medium text-[clamp(2rem,3vw,2.5rem)] text-text-primary mb-20">

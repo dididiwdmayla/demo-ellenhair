@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import FadeUp from "./animated/FadeUp";
 import { unitsData } from "@/lib/units-data";
 import { MessageCircle, MapPin, Clock, Phone } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function UnitSelector() {
-  const [selectedUnit, setSelectedUnit] = useState<string | null>(null);
+  const [selectedUnit, setSelectedUnit] = useState<string>(unitsData[0].id);
   const [isOpenNow, setIsOpenNow] = useState(false);
 
   useEffect(() => {
@@ -23,6 +24,9 @@ export default function UnitSelector() {
     checkOpen();
   },[]);
 
+  // Find active unit data
+  const activeUnitData = unitsData.find(u => u.id === selectedUnit) || unitsData[0];
+
   return (
     <section id="unidades" className="w-full bg-bg-secondary pt-32 pb-24 px-6">
       <div className="max-w-7xl mx-auto">
@@ -31,9 +35,9 @@ export default function UnitSelector() {
             <div className="flex gap-1 mb-4 text-[12px]">
               <span className="text-red-ellen">★</span><span className="text-yellow-ellen">★</span><span className="text-red-ellen">★</span>
             </div>
-            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">V</div>
+            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">I</div>
             <div className="font-mono text-xs font-bold uppercase tracking-[0.15em] text-gold">
-              05 / Unidades
+              01 / VENHA NOS VISITAR
             </div>
           </div>
           <h2 className="font-sans font-bold uppercase tracking-[0.05em] text-[clamp(2.5rem,4vw,3rem)] text-red-ellen mb-6">
@@ -112,19 +116,30 @@ export default function UnitSelector() {
           })}
         </div>
 
-        {/* Map placeholder (Using a styled iframe without API keys to prevent errors, pointing to general map location) */}
+        {/* Dynamic Map Area */}
         <FadeUp delay={0.4}>
+          <div className="w-full flex-col flex mb-2">
+             <span className="font-mono text-[11px] text-text-secondary uppercase tracking-widest">
+               VENDO UNIDADE: <strong className="text-text-primary">{activeUnitData.name}</strong>
+             </span>
+          </div>
           <div className="w-full h-[400px] bg-bg-tertiary relative overflow-hidden border border-border-subtle filter grayscale contrast-125 sepia-[0.3]">
-             {/* General Maps Embed pointing centrally to Maringá since we don't have Maps API key */}
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.0250669223!2d-51.9427!3d-23.4243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecdab4422e519b%3A0x897aeab67ad9ca5c!2sCentro%2C%20Maring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1714589000000!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <AnimatePresence mode="wait">
+              <motion.iframe
+                key={activeUnitData.id}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                src={activeUnitData.mapsEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.0250669223!2d-51.9427!3d-23.4243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecdab4422e519b%3A0x897aeab67ad9ca5c!2sCentro%2C%20Maring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1714589000000!5m2!1spt-BR!2sbr"} 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
+                allowFullScreen={false} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </AnimatePresence>
           </div>
         </FadeUp>
       </div>

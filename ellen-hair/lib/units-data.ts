@@ -10,7 +10,8 @@ export const unitsData = [
     whatsapp: "44997388413",
     whatsappDisplay: "(44) 99738-8413",
     hours: "Segunda a Sábado, 8h às 19h",
-    mapQ: "Av.+Advogado+Horácio+Raccanello+Filho,+5515"
+    mapQ: "Av.+Advogado+Horácio+Raccanello+Filho,+5515",
+    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_HORACIO_RACCANELLO" // Substituir pelo URL real obtido em google.com/maps
   },
   {
     id: "brasil",
@@ -20,7 +21,8 @@ export const unitsData = [
     whatsapp: "44997021796",
     whatsappDisplay: "(44) 99702-1796",
     hours: "Segunda a Sábado, 8h às 19h",
-    mapQ: "Av.+Brasil,+4215"
+    mapQ: "Av.+Brasil,+4215",
+    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_AVENIDA_BRASIL" // Substituir pelo URL real obtido em google.com/maps
   },
   {
     id: "mesquita",
@@ -30,6 +32,7 @@ export const unitsData = [
     whatsapp: "44998038476",
     whatsappDisplay: "(44) 99803-8476",
     hours: "Segunda a Sábado, 8h às 18h30",
-    mapQ: "Tv.+Júlio+de+Mesquita+Filho,+337"
+    mapQ: "Tv.+Júlio+de+Mesquita+Filho,+337",
+    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_JULIO_MESQUITA" // Substituir pelo URL real obtido em google.com/maps
   }
 ];

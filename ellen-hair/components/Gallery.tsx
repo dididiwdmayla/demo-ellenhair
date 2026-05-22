@@ -44,10 +44,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto">
         <FadeUp>
           <div className="flex flex-col items-center text-center mb-16">
-            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">IV</div>
+            <div className="font-display font-semibold text-[48px] text-red-ellen leading-none mb-4">V</div>
             <div className="flex items-center gap-4 mb-4">
               <span className="font-mono text-xs font-bold uppercase tracking-[0.15em] text-gold">
-                04 / Galeria
+                05 / GALERIA
               </span>
               <span className="text-yellow-ellen text-[10px]">★</span>
             </div>

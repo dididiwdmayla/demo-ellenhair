@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import UnitSelector from "@/components/UnitSelector";
 import AwardsMarquee from "@/components/AwardsMarquee";
 import Tradition from "@/components/Tradition";
 import Pillars from "@/components/Pillars";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
-import UnitSelector from "@/components/UnitSelector";
 import EditorialBreak from "@/components/EditorialBreak";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -19,13 +19,13 @@ export default function Home() {
       <CustomCursor />
       <Header />
       <Hero />
+      <UnitSelector />
       <AwardsMarquee />
       <Tradition />
       <Pillars />
       <Services />
       <Gallery />
       <Testimonials />
-      <UnitSelector />
       <EditorialBreak />
       <Contact />
       <Footer />

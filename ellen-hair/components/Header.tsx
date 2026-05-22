@@ -33,9 +33,9 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: "SERVIÇOS", href: "#servicos" },
-    { name: "TRADIÇÃO", href: "#tradicao" },
     { name: "UNIDADES", href: "#unidades" },
+    { name: "TRADIÇÃO", href: "#tradicao" },
+    { name: "SERVIÇOS", href: "#servicos" },
   ];
 
   return (
