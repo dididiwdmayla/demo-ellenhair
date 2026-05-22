@@ -11,7 +11,7 @@ export const unitsData = [
     whatsappDisplay: "(44) 99738-8413",
     hours: "Segunda a Sábado, 8h às 19h",
     mapQ: "Av.+Advogado+Horácio+Raccanello+Filho,+5515",
-    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_HORACIO_RACCANELLO" // Substituir pelo URL real obtido em google.com/maps
+    mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3661.1706805622753!2d-51.93810622571981!3d-23.418200806346295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1savenida%20horacio%20raccanello%205515!5e0!3m2!1spt-BR!2sbr!4v1779426454798!5m2!1spt-BR!2sbr"
   },
   {
     id: "brasil",
@@ -22,7 +22,7 @@ export const unitsData = [
     whatsappDisplay: "(44) 99702-1796",
     hours: "Segunda a Sábado, 8h às 19h",
     mapQ: "Av.+Brasil,+4215",
-    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_AVENIDA_BRASIL" // Substituir pelo URL real obtido em google.com/maps
+    mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.0888782456022!2d-51.94564922571959!3d-23.4211563564543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd7296e6c6325%3A0x56fca9e048f14baa!2sAv.%20Brasil%2C%204215%20-%20Zona%2003%2C%20Maring%C3%A1%20-%20PR%2C%2087013-000!5e0!3m2!1spt-BR!2sbr!4v1779426633888!5m2!1spt-BR!2sbr"
   },
   {
     id: "mesquita",
@@ -33,6 +33,6 @@ export const unitsData = [
     whatsappDisplay: "(44) 99803-8476",
     hours: "Segunda a Sábado, 8h às 18h30",
     mapQ: "Tv.+Júlio+de+Mesquita+Filho,+337",
-    mapsEmbedUrl: "COLAR_AQUI_URL_EMBED_GOOGLE_MAPS_JULIO_MESQUITA" // Substituir pelo URL real obtido em google.com/maps
+    mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.1069912593657!2d-51.94013652571969!3d-23.42050195643034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72b45ed40e3%3A0x1f3fcdfcbc94a5bb!2sTv.%20J%C3%BAlio%20de%20Mesquita%20Filho%2C%20337%20-%20centro%2C%20Maring%C3%A1%20-%20PR%2C%2087013-120!5e0!3m2!1spt-BR!2sbr!4v1779426733903!5m2!1spt-BR!2sbr"
   }
 ];
