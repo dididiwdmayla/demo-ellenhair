@@ -98,10 +98,10 @@ export default function UnitSelector() {
                     </div>
                     
                     <a
-                      href={`https://wa.me/55${unit.whatsapp}`}
+                      href={unit.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full mt-6 text-center font-mono text-[12px] uppercase font-bold tracking-[0.15em] px-6 py-4 bg-red-ellen text-[#FAFAF8] hover:bg-text-primary transition-colors shadow-sm hover:scale-[1.02]"
+                      className="inline-flex items-center justify-center w-full mt-6 text-center font-mono text-[12px] uppercase font-bold tracking-[0.15em] px-6 py-4 bg-red-ellen text-[#FAFAF8] hover:bg-red-ellen/90 transition-colors duration-200 rounded-sm"
                       onClick={(e) => {
                         e.stopPropagation();
                         setSelectedUnit(unit.id);
@@ -131,7 +131,7 @@ export default function UnitSelector() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                src={activeUnitData.mapsEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.0250669223!2d-51.9427!3d-23.4243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecdab4422e519b%3A0x897aeab67ad9ca5c!2sCentro%2C%20Maring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1714589000000!5m2!1spt-BR!2sbr"} 
+                src={activeUnitData.mapsEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.0250669223!2d-51.9427!3d-23.4243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94[...]"}
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
