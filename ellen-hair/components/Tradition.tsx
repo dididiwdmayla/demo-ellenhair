@@ -22,7 +22,7 @@ export default function Tradition() {
         <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start">
           {/* Foto Direita (Na spec 40% esq, 60% direita) */}
           <div className="w-full md:w-[40%]">
-            <MaskReveal className="relative aspect-[3/4] w-full shadow-[0_8px_32px_rgba(42,37,32,0.06)]">
+            <div className="relative aspect-[3/4] w-full shadow-[0_8px_32px_rgba(42,37,32,0.06)]">
               <div className="absolute inset-0 z-10 pointer-events-none mix-blend-color backdrop-saturate-95 backdrop-contrast-95" style={{ backgroundColor: 'rgba(184, 151, 90, 0.05)' }} />
               <Image
                 src="/historiaellenhair.png"
@@ -30,7 +30,7 @@ export default function Tradition() {
                 fill
                 className="object-cover"
               />
-            </MaskReveal>
+            </div>
           </div>
 
           {/* Texto Esquerda */}
